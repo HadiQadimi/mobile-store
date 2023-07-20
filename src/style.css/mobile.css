@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "vazir";
+    src: url("../fonts/Vazir-Bold-FD-WOL.woff2");
+}
+section{
+    margin: 8px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 1em;
+}
+.cards{
+    position: relative;
+    margin: 5px auto;
+    width: 200px;
+    border: 1px solid rgb(161, 161, 161);
+    box-shadow: 2px 2px 6px rgb(84, 84, 84);
+    border-radius: 10px;
+}
+.image-box img{
+    margin-top: 35px auto;
+    width: 200px;
+    max-width: 150px;
+    object-fit: cover;
+   min-height: 150px;
+   border: 1px solid rgb(223, 221, 221);
+   box-shadow: 1px 1px 5px rgb(97, 97, 97);
+    cursor: pointer;
+}
+.details :nth-child(1){
+    margin-top: 3px;
+    color: blue;
+    font-size: 15px;
+    font-family: 'vazir';
+    font-weight: bold;
+}
+.details button{
+    margin-bottom: 5px;
+    width: 80%;
+    padding: 2px 3px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(4, 4, 4);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family:'vazir';
+}
+
+.details button:hover{
+    background-color:#7900FF;
+    color: #fff;
+}
+.details button:active{
+    transform: translateY(3px);
+}

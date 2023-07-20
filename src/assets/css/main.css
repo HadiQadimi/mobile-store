@@ -1,0 +1,144 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "vazir";
+  src: url("../../fonts/Vazir-Bold-FD-WOL.woff2");
+}
+.navigation{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 16px;
+    direction: rtl;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3ms;
+    font-family:'vazir';
+    font-weight: bold;
+}
+.navigation:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+}
+.navlink img{
+  clip-path: circle(50% at 50% 50%);
+  transition: all 6.ms;
+}
+.tellus{
+    width: 400px;
+    margin: 50px auto;
+    color: brown;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px black;
+    
+    border-radius: 15px;
+}
+.btnsubmit{
+    width: 20px;
+    height: 5px;
+    background-color: white;
+    color: black;
+}
+.img{
+    padding: 50px 5px;
+    width: 780px;
+    height: 400px;
+    margin: 30px auto;
+    background-color: rgb(209, 209, 209);
+    border-radius: 5px;
+
+}
+.imgsrc1{
+    background-image: url('../image/food-01.png' );
+    background-size:cover;
+    background-position: center;
+    width: 600px;
+    
+    
+}
+.contact{
+    margin: 20px auto;
+    text-align: center;
+    width: 600px;
+}
+@media screen and (max-width: 630px){
+    .contact{
+        width: auto;
+    }
+}
+.menuitem {
+    max-height:max-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,1fr);
+    grid-template-rows: auto;
+}
+    .respons{
+        margin: 10px;
+        display:grid;
+        grid-template-columns: repeat(4,minmax(200px,1fr));
+        position: relative;
+    }
+    @media screen and (max-width: 1059px){
+        .respons{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); 
+             grid-column-gap: 1px;
+             grid-row-gap: 4px; 
+       }
+ 
+    }
+.modal-body{
+      width: auto;
+}
+
+  .btnshopping{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width:fit-content;
+    padding: 3px 5px;
+    margin: 0px auto;
+    margin-bottom: 6px;
+    background-color: rgb(2, 2, 74);
+    border:1px solid #fff;
+    border-radius: 6px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-style: normal;
+    transition: all 0.3s;
+  }
+  .btnshopping:hover{
+    transform: scale(1.1);
+    }
+  .cartitem li{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: yellowgreen;
+  }
+  .cartitem{
+    width: 50%;
+    height: 100%;
+    margin:auto auto;
+  }
+  .cartprice :nth-child(1){
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+  .cartprice :nth-child(3) p{
+    color: red;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+  .cartprice{
+    width: 100%;
+    height: 100%;
+   margin: 10rem auto;
+  }

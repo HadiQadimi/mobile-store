@@ -1,0 +1,117 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'vazir';
+}
+@font-face {
+  font-family: "vazir";
+  src: url("../src/fonts/Vazir-Bold-FD-WOL.woff2");
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 4vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #f0efef;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.footer{
+  background-color:#7900FF;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+  
+}
+.ulfooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.ulfooter li{
+  margin-top: 2em;
+  font-size: 13px;
+  font-family: 'vazir';
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  list-style-type: none;
+}
+.ulfooter li:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.pfooter{
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: -8px;
+  padding-bottom: 5px;
+  font-family: 'vazir';
+}
+.navlink{
+  display: flex;
+  flex-direction:row;
+  direction:rtl;
+  padding-right: 2px;
+}
+.navlink{
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width:366px){
+  .ulfooter{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,1fr);
+  }
+}
+.navbar-expand-lg{
+  background-color: #7900FF;
+  position:-webkit-sticky;
+  z-index: 10;
+}
+.navigation img{
+  width: 60px;
+}
+@media screen and (max-width:300px){
+  .navlink{
+    width:100%;
+  }
+}
+@media screen  and (max-width:1016px){
+  .mediacarousel {
+    
+  }
+
+  }
