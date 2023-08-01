@@ -20,10 +20,10 @@ return (
        {item.name} = {item.quantity} * {item.price} 
        <img src={item.image} alt={item.name}/>
        <div className='function'>
-    <button className='addproduct' onClick={()=> handleclick(item)}>
+    <button className='btn btn-primary mx-1' onClick={()=> handleclick(item)}>
       +
       </button>
-    <button className='removeproduct' onClick={()=> handleRomoveproduct(item)}>-</button>
+    <button className='btn btn-danger' onClick={()=> handleRomoveproduct(item)}>-</button>
    </div>
      </li>
    ))}

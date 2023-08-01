@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import "bootstrap/dist/css/bootstrap.rtl.css";
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import Maincomponent from './components/Maincomponent';

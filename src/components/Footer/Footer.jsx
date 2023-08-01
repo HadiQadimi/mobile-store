@@ -5,11 +5,11 @@ import {Navbar,Nav} from 'react-bootstrap';
 const Footer=()=>{
     return(
     <div className="footer">
-       <ul className="ulfooter">
-            <li>صفحه اصلی</li>
-            <li >سفارشات  </li>
-            <li>محصولات</li>
-            <li>تماس با ما </li>
+       <ul className="ulfooter ">
+           <Link className="text-decoration-none" to="/" > <li>صفحه اصلی</li></Link>
+           <Link className="text-decoration-none" to="/Order"> <li >سفارشات  </li></Link>
+            <Link className="text-decoration-none" to="/Mobile"><li>محصولات</li></Link>
+            <Link className="text-decoration-none" to="/Contact"><li>تماس با ما </li></Link>
             </ul>
         <p className="pfooter">تمامی حقوق مادی و معنوی این سایت نزد نوین سایت محفوظ است</p>
     
